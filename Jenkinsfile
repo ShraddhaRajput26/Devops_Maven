@@ -38,9 +38,5 @@ pipeline {
         }
     } // Closes stages
     
-    post {
-        always {
-            junit '**/target/surefire-reports/*.xml'
-        }
-    } // Closes post
+    // Closes post
 } // Closes pipeline (This was the missing one!)
